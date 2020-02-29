@@ -285,6 +285,7 @@ ADD errors/ /var/www/errors
 
 
 EXPOSE 443 80
+VOLUME ["/var/www/html", "/etc/nginx"]
 
 WORKDIR "/var/www/html"
 CMD ["/start.sh"]
